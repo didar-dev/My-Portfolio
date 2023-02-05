@@ -1,3 +1,4 @@
+"use client";
 import React, { Component } from "react";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
