@@ -2,12 +2,8 @@
 import React, { Component } from 'react'
 import { motion } from "framer-motion";
 
-
-const Images = [
-  "/Images/Didar/Didar.png",
-]
+ 
 export default function Header() {
-  const randomImage = Images[Math.floor(Math.random() * Images.length)];
   return (
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-2
          min-h-screen w-full">
@@ -79,7 +75,7 @@ export default function Header() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
 
-                  src={randomImage}
+                  src="/Images/Didar/Didar.png"
                   alt="Didar Abdulkhaliq"
                   className="rounded-full w-[400px] h-[400px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:w-[500px] 2xl:h-[500px] "
                 />
