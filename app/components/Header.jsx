@@ -1,8 +1,14 @@
 "use client";
 import React, { Component } from 'react'
 import { motion } from "framer-motion";
-import Didar_Logo from "../../public/Images/Didar.png";
+import Didar from "../../public/Images/Didar/Didar.png";
+
+
+const Images = [
+  Didar,
+]
 export default function Header() {
+  const randomImage = Images[Math.floor(Math.random() * Images.length)];
   return (
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-2
          min-h-screen w-full">
@@ -36,7 +42,11 @@ export default function Header() {
             </motion.p>
 
             <div className="flex flex-row gap-2 p-2">
-              <button
+              <motion.button
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+
                 onClick={() => {
                   document
                     .getElementById("projects")
@@ -46,27 +56,37 @@ export default function Header() {
                mt-4 m-1"
               >
                 Projects
-              </button>
-              <button
+              </motion.button>
+              <motion.button 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
                 onClick={() => {}}
                 className="bg-[#ffffff] hover:bg-[#ffffff] text-black font-bold py-2 px-4 rounded-full
               mt-4 m-1"
               >
                 Resume
-              </button>
+              </motion.button>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <motion.div  
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }} className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center rounded-full p-4 bg-gradient-to-tr from-gray-800 to-gray-900 opacity-90">
               <div className="flex flex-col items-center justify-center bg-gray-800 rounded-full">
-                <img
-                  src={Didar_Logo}
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+
+                  src={randomImage}
                   alt="Didar Abdulkhaliq"
                   className="rounded-full w-[400px] h-[400px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:w-[500px] 2xl:h-[500px] "
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
     )
 }
