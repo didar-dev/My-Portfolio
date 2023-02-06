@@ -1,11 +1,10 @@
 "use client";
 import React, { Component } from 'react'
 import { motion } from "framer-motion";
-import Didar from "../../public/Images/Didar/Didar.png";
 
 
 const Images = [
-  Didar,
+  "/Images/Didar/Didar.png",
 ]
 export default function Header() {
   const randomImage = Images[Math.floor(Math.random() * Images.length)];
