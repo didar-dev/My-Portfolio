@@ -13,6 +13,7 @@ export default function Head() {
       <meta property="og:url" content="https://www.didar.dev" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Didar Abdulkhaliq" />
+      <meta name="google" content="notranslate" key="notranslate" />
       <meta property="og:locale" content="en_US" />
     </>
   )
