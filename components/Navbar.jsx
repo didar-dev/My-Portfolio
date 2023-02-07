@@ -64,8 +64,9 @@ export default function Example() {
           <Disclosure.Panel className="sm:hidden">
             <motion.div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <a
                   key={item.name}
+                  href={`#${item.href}`}
                   onClick={() => {
                     document
                       .getElementById(item.href)
@@ -75,10 +76,10 @@ export default function Example() {
                     "text-gray-300  hover:text-white cursor-pointer",
                     "block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
                   )}
-                  href={`#${item.href}`}
+                  name={item.name}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </a>
               ))}
             </motion.div>
           </Disclosure.Panel>

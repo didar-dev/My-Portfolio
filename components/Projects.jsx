@@ -12,7 +12,7 @@ export default function Projects() {
       transition={{ type: "spring", stiffness: 120 }}
     >
       <motion.p
-        className="text-3xl font-semibold text-[#ffffff] "
+        className="text-3xl font-semibold text-white"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -21,7 +21,7 @@ export default function Projects() {
         No Public Projects Yet
       </motion.p>
       <motion.p
-        className="text-xl text-[#ffffff] "
+        className="text-xl text-white"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
