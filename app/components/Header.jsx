@@ -41,7 +41,6 @@ export default function Header() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-
                 onClick={() => {
                   document
                     .getElementById("projects")
@@ -70,11 +69,7 @@ export default function Header() {
               viewport={{ once: true }} className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center rounded-full p-4 bg-gradient-to-tr from-gray-800 to-gray-900 opacity-90">
               <div className="flex flex-col items-center justify-center bg-gray-800 rounded-full">
-                <motion.img
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-
+                <img
                   src="/Images/Didar/Didar.png"
                   alt="Didar Abdulkhaliq"
                   className="rounded-full w-[400px] h-[400px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:w-[500px] 2xl:h-[500px] "
