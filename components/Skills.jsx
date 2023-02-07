@@ -7,60 +7,58 @@ export default function Skills() {
     {
       id: 0,
       Name: "React",
-      Logo: "/Images/React.png",
+      Logo: "/Images/skills/React.png",
     },
     {
       id: 1,
       Name: "React Native",
-      Logo: "/Images/React.png",
+      Logo: "/Images/skills/React.png",
     },
     {
       id: 2,
       Name: "JavaScript",
-      Logo: "/Images/JavaScript.png",
+      Logo: "/Images/skills/JavaScript.png",
     },
     {
       id: 3,
       Name: "TypeScript",
-      Logo: "/Images/TypeScript.png",
+      Logo: "/Images/skills/TypeScript.png",
     },
     {
       id: 4,
       Name: "Node.js",
-      Logo: "/Images/Node.png",
+      Logo: "/Images/skills/Node.png",
     },
     {
       id: 5,
       Name: "Express.js",
-      Logo: "/Images/Express.png",
+      Logo: "/Images/skills/Express.png",
     },
     {
       id: 6,
       Name: "MongoDB",
-      Logo: "/Images/MongoDB.png",
+      Logo: "/Images/skills/MongoDB.png",
     },
     {
       id: 7,
       Name: "Git",
-      Logo: "/Images/Git.png",
+      Logo: "/Images/skills/Git.png",
     },
     {
       id: 8,
       Name: "GitHub",
-      Logo: "/Images/GitHub.png",
+      Logo: "/Images/skills/GitHub.png",
     },
     {
       id: 9,
       Name: "Tailwind CSS",
-      Logo: "/Images/Tailwind.png",
+      Logo: "/Images/skills/Tailwind.png",
     },
     {
       id: 10,
       Name: "AWS Amplify",
-      Logo: "/Images/awsAmplify.png",
+      Logo: "/Images/skills/awsAmplify.png",
     },
-
-
   ];
   return (
     <motion.div
