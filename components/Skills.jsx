@@ -1,7 +1,6 @@
 "use client";
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function Skills() {
   const skills = [
@@ -99,9 +98,11 @@ export default function Skills() {
               <motion.img
                 src={skill.Logo}
                 alt={skill.Name}
-                className="h-[40px]"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="h-10"
+                height="10px"
+                width="auto"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 120 }}
               />
