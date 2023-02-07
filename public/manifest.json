@@ -1,16 +1,32 @@
 {
-  "short_name": "Didar Abdulkhaliq",
-  "name": "Didar Abdulkhaliq - Frontend Developer",
-  "start_url": ".",
-  "display": "standalone",
   "theme_color": "#111827",
   "background_color": "#111827",
-  "orientation": "portrait-primary",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Didar Abdulkhaliq",
+  "short_name": "Didar",
+  "description": "An enthusiastic Developer with self-earned experience in both front-end and back-end development. Experienced with all stages of the development cycle for dynamic web projects",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "./Images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./Images/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./Images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./Images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
