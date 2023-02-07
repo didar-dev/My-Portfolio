@@ -1,7 +1,7 @@
 "use client";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import { motion } from "framer-motion";
 const navigation = [
   { name: "About", href: "about", current: false },
   { name: "Projects", href: "projects", current: false },
@@ -61,7 +61,7 @@ export default function Example() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
+            <motion.div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -78,7 +78,7 @@ export default function Example() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-            </div>
+            </motion.div>
           </Disclosure.Panel>
         </>
       )}
