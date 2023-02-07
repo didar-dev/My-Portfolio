@@ -8,57 +8,57 @@ export default function Skills() {
     {
       id: 0,
       Name: "React",
-      Logo: "/Images/skills/React.png",
+      Logo: "/Images/Skills/React.png",
     },
     {
       id: 1,
       Name: "React Native",
-      Logo: "/Images/skills/React.png",
+      Logo: "/Images/Skills/React.png",
     },
     {
       id: 2,
       Name: "JavaScript",
-      Logo: "/Images/skills/JavaScript.png",
+      Logo: "/Images/Skills/JavaScript.png",
     },
     {
       id: 3,
       Name: "TypeScript",
-      Logo: "/Images/skills/TypeScript.png",
+      Logo: "/Images/Skills/TypeScript.png",
     },
     {
       id: 4,
       Name: "Node.js",
-      Logo: "/Images/skills/Node.png",
+      Logo: "/Images/Skills/Node.png",
     },
     {
       id: 5,
       Name: "Express.js",
-      Logo: "/Images/skills/Express.png",
+      Logo: "/Images/Skills/Express.png",
     },
     {
       id: 6,
       Name: "MongoDB",
-      Logo: "/Images/skills/MongoDB.png",
+      Logo: "/Images/Skills/MongoDB.png",
     },
     {
       id: 7,
       Name: "Git",
-      Logo: "/Images/skills/Git.png",
+      Logo: "/Images/Skills/Git.png",
     },
     {
       id: 8,
       Name: "GitHub",
-      Logo: "/Images/skills/GitHub.png",
+      Logo: "/Images/Skills/GitHub.png",
     },
     {
       id: 9,
       Name: "Tailwind CSS",
-      Logo: "/Images/skills/Tailwind.png",
+      Logo: "/Images/Skills/Tailwind.png",
     },
     {
       id: 10,
       Name: "AWS Amplify",
-      Logo: "/Images/skills/awsAmplify.png",
+      Logo: "/Images/Skills/awsAmplify.png",
     },
   ];
   return (
