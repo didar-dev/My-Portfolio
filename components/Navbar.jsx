@@ -50,6 +50,7 @@ export default function Example() {
                             .getElementById(item.href)
                             .scrollIntoView({ behavior: "smooth" });
                         }}
+                        href={`#${item.href}`}
                       >
                         {item.name}
                       </a>
@@ -74,6 +75,7 @@ export default function Example() {
                     "text-gray-300  hover:text-white cursor-pointer",
                     "block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
                   )}
+                  href={`#${item.href}`}
                 >
                   {item.name}
                 </Disclosure.Button>
