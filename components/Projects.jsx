@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { motion } from "framer-motion";
 
 export default function Projects() {
-
   return (
     <motion.div
       className="flex flex-col items-center justify-center min-h-screen"
@@ -20,7 +19,7 @@ export default function Projects() {
         Transition={{ duration: 2 }}
       >
         No Public Projects Yet
-      </motion.p> 
+      </motion.p>
       <motion.p
         className="text-xl text-[#ffffff] "
         initial={{ opacity: 0 }}
@@ -32,6 +31,4 @@ export default function Projects() {
       </motion.p>
     </motion.div>
   );
-};
-
- 
+}

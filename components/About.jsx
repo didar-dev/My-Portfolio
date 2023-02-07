@@ -2,19 +2,20 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 export default function About() {
-    const Educations = [
-        {
-            id: 1,
-            title: "Diploma in Computer Science - Gasha Institute / 2021 - Present",
-            description: "I'm currently studying at Gasha Institute, I'm in my 2nd year of my diploma in Computer Science.",
-        },
-    ];  
-     const Experiences = [
-        {
-            id: 1,
-            title: "Full Stack Developer as Freelancer / 2021 - Present",
-        },
-    ];
+  const Educations = [
+    {
+      id: 1,
+      title: "Diploma in Computer Science - Gasha Institute / 2021 - Present",
+      description:
+        "I'm currently studying at Gasha Institute, I'm in my 2nd year of my diploma in Computer Science.",
+    },
+  ];
+  const Experiences = [
+    {
+      id: 1,
+      title: "Full Stack Developer as Freelancer / 2021 - Present",
+    },
+  ];
   return (
     <div id="about" className="min-h-fit h-full py-4">
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-18 w-full h-fit">
@@ -70,7 +71,9 @@ export default function About() {
                 transition={{ duration: index * 1 }}
               >
                 <div className="flex flex-col">
-                  <p className="text-md  text-[#ffffff93] ">{Education.title}</p>
+                  <p className="text-md  text-[#ffffff93] ">
+                    {Education.title}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -112,5 +115,4 @@ export default function About() {
       </div>
     </div>
   );
-};
-
+}

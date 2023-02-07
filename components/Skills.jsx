@@ -1,10 +1,10 @@
 "use client";
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Skills() {
-  const skills = [ 
+  const skills = [
     {
       id: 0,
       Name: "React",
@@ -112,6 +112,4 @@ export default function Skills() {
       </div>
     </motion.div>
   );
-};
-
- 
+}

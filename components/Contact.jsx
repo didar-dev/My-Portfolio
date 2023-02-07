@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  FaFacebook,
-  FaPhone,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebook, FaPhone, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 export default function Contact() {
   return (
@@ -50,5 +45,4 @@ export default function Contact() {
       </div>
     </div>
   );
-};
-
+}
