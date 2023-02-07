@@ -6,6 +6,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "redeploy": "git pull && npm run build && npm run postbuild && pm2 restart nextjs",
     "start": "next start -p 8000",
     "lint": "next lint"
   },
@@ -13,7 +14,6 @@
     "@headlessui/react": "^1.7.9",
     "@heroicons/react": "^2.0.14",
     "@next/font": "13.1.6",
-    "firebase": "^9.17.1",
     "framer-motion": "^9.0.1",
     "next": "^13.1.6",
     "next-sitemap": "^3.1.50",
