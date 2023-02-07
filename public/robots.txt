@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://didar.dev
+
+# Sitemaps
+Sitemap: https://didar.dev/sitemap.xml
