@@ -11,7 +11,7 @@ export default function Contact() {
       <div id="links" className="flex flex-row gap-2 p-2">
         <a
           href="https://www.facebook.com/DidarDotdev/"
-          name="Facebook"
+          name="Facebook Profile"
           className="p-3 bg-gradient-to-r from-[#ff9e0c] to-[#ff9e0c] rounded-full"
         >
           <FaFacebook className="text-4xl text-[#ffffff] hover:text-[#ffffff] hover:scale-110 transition duration-300 ease-in-out transform" />
@@ -19,28 +19,28 @@ export default function Contact() {
 
         <a
           href="https://www.linkedin.com/in/didar-abdulkhaliq-65022221b/"
-          name="LinkedIn"
+          name="LinkedIn Profile"
           className="p-3 bg-gradient-to-r from-[#ff9e0c] to-[#ff9e0c] rounded-full"
         >
           <FaLinkedin className="text-4xl text-[#ffffff] hover:text-[#ffffff] hover:scale-110 transition duration-300 ease-in-out transform" />
         </a>
         <a
           href="https://twitter.com/Didarokk"
-          name="Twitter"
+          name="Twitter Profile"
           className="p-3 bg-gradient-to-r from-[#ff9e0c] to-[#ff9e0c] rounded-full"
         >
           <FaTwitter className="text-4xl text-[#ffffff] hover:text-[#ffffff] hover:scale-110 transition duration-300 ease-in-out transform" />
         </a>
         <a
           href="tel:+964773 454 8667"
-          name="Phone"
+          name="Phone Number"
           className="p-3 bg-gradient-to-r from-[#ff9e0c] to-[#ff9e0c] rounded-full"
         >
           <FaPhone className="text-4xl text-[#ffffff] hover:text-[#ffffff] hover:scale-110 transition duration-300 ease-in-out transform" />
         </a>
         <a
           href="mailto:didar0xalil@gmail.com"
-          name="Email"
+          name="Email Address"
           className="p-3 bg-gradient-to-r from-[#ff9e0c] to-[#ff9e0c] rounded-full"
         >
           <MdEmail className="text-4xl text-[#ffffff] hover:text-[#ffffff] hover:scale-110 transition duration-300 ease-in-out transform" />
