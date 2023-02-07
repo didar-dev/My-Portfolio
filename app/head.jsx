@@ -3,6 +3,7 @@ export default function Head() {
     <>
       <title>Didar Abdulkhaliq</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link rel="manifest" href="/manifest.json" />
       <meta name="description" content="Didar Abdulkhaliq's personal portfolio website" />
       <link rel="icon" href="/favicon.ico" />
       <meta property="og:image" content="https://i.imgur.com/52NnUgf.png" />
