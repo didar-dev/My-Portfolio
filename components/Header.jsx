@@ -53,7 +53,7 @@ export default function Header() {
             <img
               src="/Images/Didar/Didar.png"
               alt="Didar Abdulkhaliq"
-              className="rounded-full w-[400px] h-[400px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[500px] xl:h-[500px] 2xl:w-[500px] 2xl:h-[500px] "
+              className="rounded-full w-auto h-[280px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px]"
             />
           </div>
         </div>
