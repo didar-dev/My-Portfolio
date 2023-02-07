@@ -1,6 +1,7 @@
 "use client";
 import React, { Component } from "react";
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 export default function Skills() {
   const skills = [ 
