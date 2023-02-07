@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShow(false);
-    }, 112100);
+    }, 2100);
     return () => {};
   }, []);
   return (
