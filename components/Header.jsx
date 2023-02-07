@@ -55,10 +55,9 @@ export default function Header() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                onClick={() => {}}
-                className="bg-[#ffffff] hover:bg-[#ffffff] text-black font-bold py-2 px-4 rounded-full
-              mt-4 m-1"
-              >
+                className="bg-[#ffffff] hover:bg-[#ffffff] text-black font-bold py-2 px-4 rounded-full mt-4 m-1"
+                onClick={() => window.open("/Resume/Didar.pdf", "_blank")}
+             >
                 Resume
               </motion.button>
             </div>
