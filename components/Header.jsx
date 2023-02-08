@@ -45,7 +45,7 @@ export default function Header() {
       <div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }} 
+        viewport={{ once: true }}
         className="flex flex-col items-center justify-center"
       >
         <div className="flex flex-col items-center justify-center rounded-full p-4 bg-gradient-to-tr from-gray-800 to-gray-900 opacity-90">
