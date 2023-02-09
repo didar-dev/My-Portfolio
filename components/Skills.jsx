@@ -1,7 +1,6 @@
 "use client";
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-
 export default function Skills() {
   const skills = [
     {
@@ -16,46 +15,51 @@ export default function Skills() {
     },
     {
       id: 2,
+      Name: "Next.js",
+      Logo: "/Images/Skills/nextjs.png",
+    },
+    {
+      id: 3,
       Name: "JavaScript",
       Logo: "/Images/Skills/JavaScript.png",
     },
     {
-      id: 3,
+      id: 4,
       Name: "TypeScript",
       Logo: "/Images/Skills/TypeScript.png",
     },
     {
-      id: 4,
+      id: 5,
       Name: "Node.js",
       Logo: "/Images/Skills/Node.png",
     },
     {
-      id: 5,
+      id: 6,
       Name: "Express.js",
       Logo: "/Images/Skills/Express.png",
     },
     {
-      id: 6,
+      id: 7,
       Name: "MongoDB",
       Logo: "/Images/Skills/MongoDB.png",
     },
     {
-      id: 7,
+      id: 8,
       Name: "Git",
       Logo: "/Images/Skills/Git.png",
     },
     {
-      id: 8,
+      id: 9,
       Name: "GitHub",
       Logo: "/Images/Skills/GitHub.png",
     },
     {
-      id: 9,
+      id: 10,
       Name: "Tailwind CSS",
       Logo: "/Images/Skills/Tailwind.png",
     },
     {
-      id: 10,
+      id: 11,
       Name: "AWS Amplify",
       Logo: "/Images/Skills/awsAmplify.png",
     },
