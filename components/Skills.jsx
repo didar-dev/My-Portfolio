@@ -79,34 +79,40 @@ export default function Skills() {
       </motion.h1>
       <div className="flex flex-col items-center justify-center w-full h-full">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-          {skills.map((skill) => (
+          {skills.map((skill, index) => (
             <motion.div
-              key={skill.id}
-              className="flex flex-col items-center justify-between
-                rounded-2xl shadow-xl p-4 gap-2
-                cursor-pointer bg-gray-800
-                hover:shadow-xl  transition duration-500 ease-in-out"
-              whileHover={{
-                transition: { duration: 0.3 },
-                boxShadow: "0px 0px 25px 0px rgba(255, 255, 255, 0.1)",
+              key={index}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{
+                delay: index * 0.1,
               }}
-              whileTap={{
-                scale: 0.9,
-                transition: { duration: 0.5 },
-              }}
+              viewport={{ once: true }}
+              class="grid gap-8 items-start justify-center"
             >
-              <motion.img
-                src={skill.Logo}
-                alt={skill.Name}
-                className="h-10"
-                height="10px"
-                width="auto"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 120 }}
-              />
-              <p className="text-[#d8d8d8]  text-sm">{skill.Name}</p>
+              <div class="relative group ">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <div
+                  class="relative  h-32 w-32  bg-black
+                   border-[1px] border-[#ff9e0c72] rounded-lg
+                leading-none flex flex-col items-center justify-center  gap-2
+                 transition duration-1000 group-hover:duration-200 animate-tilt
+                "
+                >
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ type: "spring", stiffness: 120 }}
+                    className="h-14"
+                    height="14px"
+                    width="auto"
+                    src={skill.Logo}
+                    alt={skill.Name}
+                  />
+                  <p className="text-[#d8d8d8]  text-sm">{skill.Name}</p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -22,24 +22,41 @@ export default function Header() {
           development cycle for dynamic web projects
         </p>
 
-        <div className="flex flex-row gap-2 p-2">
-          <button
-            onClick={() => {
-              document
-                .getElementById("projects")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-            className="bg-[#ffffff] hover:bg-[#ffffff] text-black font-bold py-2 px-4 rounded-full
-               mt-4 m-1"
-          >
-            Projects
-          </button>
-          <button
-            className="bg-[#ffffff] hover:bg-[#ffffff] text-black font-bold py-2 px-4 rounded-full mt-4 m-1"
-            onClick={() => window.open("/Resume/Didar.pdf", "_blank")}
-          >
-            Resume
-          </button>
+        <div className="flex flex-row gap-6  p-2 pt-6">
+          <div class="grid gap-8 items-start justify-center">
+            <div class="relative group">
+              <div class="absolute -inset-0.5 bg-gradient-to-r from-orange-600 to-orange-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <button
+                class="relative px-4 py-2 bg-black border-[1px] border-orange-600 rounded-lg
+               leading-none flex items-center divide-x divide-gray-600
+               hover:bg-orange-600 hover:text-white
+                transition duration-1000 group-hover:duration-200 animate-tilt
+               "
+                onClick={() => {
+                  document.getElementById("contact").scrollIntoView();
+                }}
+              >
+                <span class="text-white font-bold">Contact</span>
+              </button>
+            </div>
+          </div>
+          <div class="grid gap-8 items-start justify-center">
+            <div class="relative group">
+              <div class="absolute -inset-0.5 bg-gradient-to-r from-orange-600 to-orange-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <button
+                class="relative px-4 py-2 bg-black border-[1px] border-orange-600 rounded-lg
+               leading-none flex items-center divide-x divide-gray-600
+               hover:bg-orange-600 hover:text-white
+                transition duration-1000 group-hover:duration-200 animate-tilt
+               "
+                onClick={() => {
+                  document.getElementById("projects").scrollIntoView();
+                }}
+              >
+                <span class="text-white font-bold">Resume</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -49,7 +66,7 @@ export default function Header() {
         className="flex flex-col items-center justify-center"
       >
         <div className="flex flex-col items-center justify-center rounded-full p-4 bg-gradient-to-tr from-gray-800 to-gray-900 opacity-90">
-          <div className="flex flex-col items-center justify-center bg-gray-800 rounded-full">
+          <div className="flex flex-col items-center justify-center bg-black rounded-full">
             <img
               src="/Images/Didar/Didar.png"
               alt="Didar Abdulkhaliq"

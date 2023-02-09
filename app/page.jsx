@@ -8,7 +8,7 @@ import Contact from "../components/Contact";
 import Github from "../components/Github";
 export default function Home() {
   return (
-    <main className="bg-gray-900">
+    <main className="bg-[#111111]">
       <div>
         <div className="min-h-screen">
           <Navbar />
