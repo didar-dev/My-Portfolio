@@ -6,10 +6,29 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Github from "../components/Github";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div className="bg-[#111111]">
+      <Head>
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-3FW29S7XTM`}
+        />
+        <Script id="ga-script" strategy="lazyOnload">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3FW29S7XTM', {
+        page_path: window.location.pathname,
+      });
+          `}
+        </Script>
+      </Head>
+
       <div>
         <div className="min-h-screen">
           <Navbar />
