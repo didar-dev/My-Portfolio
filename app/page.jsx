@@ -11,16 +11,6 @@ import Script from "next/script";
 export default function Home() {
   return (
     <div className="bg-[#111111]">
-      <Script>
-        {`   window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'G-3FW29S7XTM', 'auto');
-          ga('send', 'pageview');
-        `}
-      </Script>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-3FW29S7XTM"
-      ></Script>
       <div>
         <div className="min-h-screen">
           <Navbar />
