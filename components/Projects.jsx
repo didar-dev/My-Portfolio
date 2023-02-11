@@ -26,12 +26,12 @@ export default function Projects() {
             delay: index * 0.1,
           }}
           viewport={{ once: true }}
-          class="grid gap-8 items-start justify-center "
+          className="grid gap-8 items-start justify-center "
         >
-          <div class="relative group w-80  ">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+          <div className="relative group w-80  ">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <div
-              class="relative bg-black 
+              className="relative bg-black 
                    border-[1px] border-[#ff9e0c72] rounded-lg
                 leading-none flex flex-col items-center justify-center 
                  transition duration-1000 group-hover:duration-200 animate-tilt

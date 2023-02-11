@@ -16,12 +16,12 @@ export default function Home() {
         src="https://www.googletagmanager.com/gtag/js?id=G-3FW29S7XTM"
       ></Script>
       <Script>
-        {`  window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-3FW29S7XTM');
-    `}
+        {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3FW29S7XTM');
+`}
       </Script>
       <div>
         <div className="min-h-screen">
