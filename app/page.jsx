@@ -6,7 +6,6 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Github from "../components/Github";
-import Script from "next/script";
 
 export default function Home() {
   return (
