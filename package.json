@@ -6,7 +6,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
-    "redeploy": "git pull && npm run build && npm run postbuild && pm2 restart nextjs",
+    "up": "git pull && npm run build && npm run postbuild && pm2 restart nextjs",
     "start": "next start -p 8000",
     "lint": "next lint"
   },
