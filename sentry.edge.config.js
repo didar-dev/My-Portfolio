@@ -2,12 +2,10 @@
 // The config you add here will be used whenever middleware or an Edge route handles a request.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-import * as Sentry from '@sentry/nextjs';
-
-const SENTRY_DSN = process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN;
+import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: SENTRY_DSN || 'https://4b6fd298506f4856b8385f12aeac8cfa@o4504697172131840.ingest.sentry.io/4504698382647296',
+  dsn: "https://4b6fd298506f4856b8385f12aeac8cfa@o4504697172131840.ingest.sentry.io/4504698382647296",
   // Adjust this value in production, or use tracesSampler for greater control
   tracesSampleRate: 1.0,
   // ...
