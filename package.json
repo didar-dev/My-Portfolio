@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "up": "git pull && npm run build && npm run postbuild && pm2 restart nextjs",
@@ -14,6 +14,7 @@
     "@headlessui/react": "^1.7.9",
     "@heroicons/react": "^2.0.14",
     "@next/font": "13.1.6",
+    "@sentry/nextjs": "^7.38.0",
     "animejs": "^3.2.1",
     "framer-motion": "^9.0.1",
     "next": "^13.1.6",
