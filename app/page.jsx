@@ -5,7 +5,6 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Github from "../components/Github";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -41,7 +40,6 @@ export default function Home() {
         <div id="projects">
           <Projects />
         </div>
-        <Github />
         <div id="contact">
           <Contact />
         </div>
