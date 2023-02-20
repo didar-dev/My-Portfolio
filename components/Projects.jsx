@@ -29,10 +29,10 @@ export default function Projects() {
           className="grid gap-8 items-start justify-center "
         >
           <div className="relative group w-80  ">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
             <div
               className="relative bg-black 
-                   border-[1px] border-[#ff9e0c72] rounded-lg
+                   border-[1px] border-[#ffffff72] rounded-lg
                 leading-none flex flex-col items-center justify-center 
                  transition duration-1000 group-hover:duration-200 animate-tilt
                 "
@@ -54,7 +54,7 @@ export default function Projects() {
                 </p>
                 <p className="text-[#d8d8d8]  text-sm">{project.description}</p>
               </div>
-              <div className="bg-[#ff9e0c72] w-full h-8 flex items-center justify-center">
+              <div className="bg-[#ffffff72] w-full h-8 flex items-center justify-center">
                 <a
                   href={project.link}
                   target="_blank"

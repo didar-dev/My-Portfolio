@@ -12,7 +12,7 @@ export default function Header() {
           Didar Abdulkhaliq
         </p>
         <p
-          className="text-1xl sm:text-2xl font-semibold text-[#ff9e0c] text-center px-2
+          className="text-1xl sm:text-2xl font-semibold text-[#ffffff] text-center px-2
               bg-gradient-to-r bg-clip-text from-[#ffffff] to-[#ffffff]"
         >
           Full Stack Developer
@@ -26,11 +26,11 @@ export default function Header() {
         <div className="flex flex-row gap-6  p-2 pt-6">
           <div className="grid gap-8 items-start justify-center">
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
               <button
-                className="relative px-4 py-2 bg-black border-[1px] border-orange-600 rounded-lg
+                className="relative px-4 py-2 bg-black border-[1px] border-[#ffffff] rounded-lg
                leading-none flex items-center divide-x divide-gray-600
-               hover:bg-orange-600 hover:text-white
+               hover:#ffffff72 hover:text-white
                 transition duration-1000 group-hover:duration-200 animate-tilt
                "
                 onClick={() => {
@@ -43,11 +43,11 @@ export default function Header() {
           </div>
           <div className="grid gap-8 items-start justify-center">
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
               <button
-                className="relative px-4 py-2 bg-black border-[1px] border-orange-600 rounded-lg
+                className="relative px-4 py-2 bg-black border-[1px] border-[#ffffff] rounded-lg
                leading-none flex items-center divide-x divide-gray-600
-               hover:bg-orange-600 hover:text-white
+               hover:#ffffff72 hover:text-white
                 transition duration-1000 group-hover:duration-200 animate-tilt
                "
                 onClick={() => {

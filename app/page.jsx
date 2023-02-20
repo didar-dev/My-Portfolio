@@ -10,7 +10,7 @@ import Script from "next/script";
 
 export default function Home() {
   return (
-    <div className="bg-[#111111]">
+    <div className="bg-black">
       <Head>
         <Script
           strategy="lazyOnload"

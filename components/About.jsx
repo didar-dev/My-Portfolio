@@ -27,7 +27,7 @@ export default function About() {
               viewport={{ once: true }}
               className="text-5xl  font-semibold text-[#ffffff] text-center "
             >
-              Hi,<span className="text-[#ff9e0c]"> I'm </span> Didar Abdulkhaliq
+              Hi,<span className="text-[#ffffff]"> I'm </span> Didar Abdulkhaliq
             </motion.p>
             <motion.p
               className="text-1xl p-2 font-semibold  text-white w-3/4 text-center"
@@ -50,89 +50,72 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             Transition={{ duration: 2 }}
-            className="flex flex-col justify-between rounded-2xl shadow-xl hover:shadow-xl transition duration-500 ease-in-out"
+            className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5
+               border-[#ffffff72] rounded-lg leading-none
+                flex transition duration-1000 group-hover:duration-200
+                 animate-tilt flex-col gap-2
+                  "
           >
-            <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c72]rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <motion.p
+              className="text-3xl font-semibold text-[#ffffff] "
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              Transition={{ duration: 2 }}
+            >
+              Education
+            </motion.p>
+            {Educations.map((Education, index) => (
               <motion.div
+                key={Education.id}
+                className="flex flex-row gap-2 p-2"
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                Transition={{ duration: 2 }}
-                className="relative p-4 bg-black border-[1px] border-[#ff9e0c72] rounded-lg leading-none flex transition duration-1000 group-hover:duration-200 animate-tilt flex-col gap-2
-            "
+                animate={{ opacity: 1 }}
+                transition={{ duration: index * 1 }}
               >
-                <motion.p
-                  className="text-3xl font-semibold text-[#ffffff] "
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  Transition={{ duration: 2 }}
-                >
-                  Education
-                </motion.p>
-                {Educations.map((Education, index) => (
-                  <motion.div
-                    key={Education.id}
-                    className="flex flex-row gap-2 p-2"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: index * 1 }}
-                  >
-                    <div className="flex flex-col">
-                      <p className="text-md  text-[#ffffff93] ">
-                        {Education.title}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+                <div className="flex flex-col">
+                  <p className="text-md  text-[#ffffff93] ">
+                    {Education.title}
+                  </p>
+                </div>
               </motion.div>
-            </div>
+            ))}
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             Transition={{ duration: 2 }}
-            className="flex flex-col justify-between rounded-2xl shadow-xl 
-           hover:shadow-xl transition duration-500 ease-in-out"
+            className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5
+               border-[#ffffff72] rounded-lg leading-none
+                flex transition duration-1000 group-hover:duration-200
+                 animate-tilt flex-col gap-2
+                  "
           >
-            <div className="relative group ">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c72]rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+            <motion.p
+              className="text-3xl font-semibold text-[#ffffff] "
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              Transition={{ duration: 2 }}
+            >
+              Experience
+            </motion.p>
+            {Experiences.map((Experience, index) => (
               <motion.div
+                key={Experience.id}
+                className="flex flex-row gap-2 p-2"
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                Transition={{ duration: 2 }}
-                className="relative p-4 bg-black border-[1px] border-[#ff9e0c72] rounded-lg leading-none flex transition duration-1000 group-hover:duration-200 animate-tilt flex-col gap-2
-            "
+                animate={{ opacity: 1 }}
+                transition={{ duration: index * 1 }}
               >
-                <motion.p
-                  className="text-3xl font-semibold text-[#ffffff] "
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  Transition={{ duration: 2 }}
-                >
-                  Experience
-                </motion.p>
-                {Experiences.map((Experience, index) => (
-                  <motion.div
-                    key={Experience.id}
-                    className="flex flex-row gap-2 p-2"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: index * 1 }}
-                  >
-                    <div className="flex flex-col">
-                      <p className="text-md  text-[#ffffff93] ">
-                        {Experience.title}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+                <div className="flex flex-col">
+                  <p className="text-md  text-[#ffffff93] ">
+                    {Experience.title}
+                  </p>
+                </div>
               </motion.div>
-            </div>
+            ))}
           </motion.div>
         </div>
       </div>

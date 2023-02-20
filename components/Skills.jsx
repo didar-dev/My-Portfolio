@@ -94,28 +94,25 @@ export default function Skills() {
               viewport={{ once: true }}
               className="grid gap-8 items-start justify-center"
             >
-              <div className="relative group ">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ff9e0c72] to-[#ff9e0c2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                <div
-                  className="relative  h-32 w-32  bg-black
-                   border-[1px] border-[#ff9e0c72] rounded-lg
-                leading-none flex flex-col items-center justify-center  gap-2
-                 transition duration-1000 group-hover:duration-200 animate-tilt
-                "
-                >
-                  <motion.img
-                    initial={{ opacity: 0 }}
-                    viewport={{ once: true }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ type: "spring", stiffness: 120 }}
-                    className="h-14"
-                    height="14px"
-                    width="auto"
-                    src={skill.Logo}
-                    alt={skill.Name}
-                  />
-                  <p className="text-[#d8d8d8]  text-sm">{skill.Name}</p>
-                </div>
+              <div
+                className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5 w-36 h-36
+              border-[#ffffff72] rounded-lg leading-none items-center justify-center
+               flex transition duration-1000 group-hover:duration-200
+                animate-tilt flex-col gap-2
+                 "
+              >
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  viewport={{ once: true }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ type: "spring", stiffness: 120 }}
+                  className="h-14"
+                  height="14px"
+                  width="auto"
+                  src={skill.Logo}
+                  alt={skill.Name}
+                />
+                <p className="text-[#d8d8d8]  text-sm">{skill.Name}</p>
               </div>
             </motion.div>
           ))}
