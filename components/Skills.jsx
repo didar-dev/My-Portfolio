@@ -95,8 +95,7 @@ export default function Skills() {
               className="grid gap-8 items-start justify-center"
             >
               <div
-                className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5 w-36 h-36
-              border-[#ffffff72] rounded-lg leading-none items-center justify-center
+                className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5 w-36 h-36 border-[#ffffff72] rounded-lg leading-none items-center justify-center
                flex transition duration-1000 group-hover:duration-200
                 animate-tilt flex-col gap-2
                  "
