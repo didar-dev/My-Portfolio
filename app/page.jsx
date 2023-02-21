@@ -5,12 +5,11 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import Background from "../Images/Background.png";
 export default function Home() {
   return (
     <div
       style={{
-        backgroundImage: `url(${Background})`,
+        backgroundImage: `url(../Images/Background.png)`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
