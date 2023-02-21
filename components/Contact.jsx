@@ -103,7 +103,7 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="flex  backdrop-blur-md  bg-white/5   border-[#ffffff72] border-[1px] 
+          className="flex  backdrop-blur-sm  bg-white/5   border-[#ffffff72] border-[1px] 
            flex-col w-full  justify-center 
            items-center p-4 gap-2 min-h-[468px] rounded-md"
         >

@@ -25,38 +25,30 @@ export default function Header() {
 
         <div className="flex flex-row gap-6  p-2 pt-6">
           <div className="grid gap-8 items-start justify-center">
-            <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-              <button
-                className="relative px-4 py-2 bg-black border-[1px] border-[#ffffff] rounded-lg
-               leading-none flex items-center divide-x divide-gray-600
-               hover:#ffffff72 hover:text-white
-                transition duration-1000 group-hover:duration-200 animate-tilt
-               "
-                onClick={() => {
-                  document.getElementById("contact").scrollIntoView();
-                }}
-              >
-                <span className="text-white font-bold">Contact</span>
-              </button>
-            </div>
+            <button
+              className="relative px-4 py-2 border-[1px]  backdrop-blur-sm bg-white/5
+                border-[#ffffff72] rounded-lg
+                leading-none flex items-center divide-x divide-gray-600
+                 "
+              onClick={() => {
+                document.getElementById("contact").scrollIntoView();
+              }}
+            >
+              <span className="text-white font-bold">Contact</span>
+            </button>
           </div>
           <div className="grid gap-8 items-start justify-center">
-            <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-              <button
-                className="relative px-4 py-2 bg-black border-[1px] border-[#ffffff] rounded-lg
-               leading-none flex items-center divide-x divide-gray-600
-               hover:#ffffff72 hover:text-white
-                transition duration-1000 group-hover:duration-200 animate-tilt
+            <button
+              className="relative px-4 py-2 border-[1px]  backdrop-blur-sm bg-white/5
+              border-[#ffffff72] rounded-lg
+              leading-none flex items-center divide-x divide-gray-600
                "
-                onClick={() => {
-                  OpenResume();
-                }}
-              >
-                <span className="text-white font-bold">Resume</span>
-              </button>
-            </div>
+              onClick={() => {
+                OpenResume();
+              }}
+            >
+              <span className="text-white font-bold">Resume</span>
+            </button>
           </div>
         </div>
       </div>

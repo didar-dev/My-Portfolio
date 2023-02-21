@@ -30,10 +30,8 @@ export default function Projects() {
         >
           <div className="relative group w-80 ">
             <div
-              className="relative
-                   border-[1px] border-white/5 rounded-lg
-                leading-none flex flex-col items-center justify-center 
-                backdrop-blur-md bg-white/5   
+              className="relative rounded-lg  backdrop-blur-sm bg-white/5 border-[#ffffff72] leading-none flex flex-col items-center justify-center 
+                border-[1px]
                 "
             >
               <div className="h-32">
@@ -53,7 +51,7 @@ export default function Projects() {
                 </p>
                 <p className="text-[#d8d8d8]  text-sm">{project.description}</p>
               </div>
-              <div className=" backdrop-blur-md bg-white/5 w-full py-2 flex items-center justify-center">
+              <div className=" backdrop-blur-sm bg-white/5 w-full py-2 flex items-center justify-center">
                 <a
                   href={project.link}
                   target="_blank"

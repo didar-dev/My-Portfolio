@@ -50,7 +50,7 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             Transition={{ duration: 2 }}
-            className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5
+            className="relative p-4 border-[1px]  backdrop-blur-sm bg-white/5
                border-[#ffffff72] rounded-lg leading-none
                 flex transition duration-1000 group-hover:duration-200
                  animate-tilt flex-col gap-2
@@ -86,7 +86,7 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             Transition={{ duration: 2 }}
-            className="relative p-4 border-[1px]  backdrop-blur-md bg-white/5
+            className="relative p-4 border-[1px]  backdrop-blur-sm bg-white/5
                border-[#ffffff72] rounded-lg leading-none
                 flex transition duration-1000 group-hover:duration-200
                  animate-tilt flex-col gap-2
