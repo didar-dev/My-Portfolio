@@ -28,13 +28,12 @@ export default function Projects() {
           viewport={{ once: true }}
           className="grid gap-8 items-start justify-center "
         >
-          <div className="relative group w-80  ">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#ffffff72] to-[#ffffff2a] rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+          <div className="relative group w-80 ">
             <div
-              className="relative bg-black 
-                   border-[1px] border-[#ffffff72] rounded-lg
+              className="relative
+                   border-[1px] border-white/5 rounded-lg
                 leading-none flex flex-col items-center justify-center 
-                 transition duration-1000 group-hover:duration-200 animate-tilt
+                backdrop-blur-md bg-white/5   
                 "
             >
               <div className="h-32">
@@ -54,12 +53,12 @@ export default function Projects() {
                 </p>
                 <p className="text-[#d8d8d8]  text-sm">{project.description}</p>
               </div>
-              <div className="bg-[#ffffff72] w-full h-8 flex items-center justify-center">
+              <div className=" backdrop-blur-md bg-white/5 w-full py-2 flex items-center justify-center">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-[#d8d8d8] text-sm font-semibold flex items-center gap-2"
+                  className="text-[#ffffff]  text-sm font-semibold flex items-center gap-2"
                 >
                   {project.ButtonText}
                   <GoLinkExternal size={22} />

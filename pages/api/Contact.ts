@@ -3,6 +3,7 @@ const nodemailer = require("nodemailer");
 import { NextApiRequest, NextApiResponse } from "next";
 type Data = {
   message?: string;
+  status?: string;
 };
 
 export default async function handler(
@@ -48,6 +49,7 @@ export default async function handler(
   });
   res.status(200).json({
     message: "Email Sent Successfully, I will get back to you soon",
+    status: "success",
   });
 }
 
