@@ -13,8 +13,9 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundAttachment: "fixed",
       }}
-      className="min-h-screen flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center"
     >
       <div className="min-h-screen">
         <Navbar />
