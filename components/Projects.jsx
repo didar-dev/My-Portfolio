@@ -28,18 +28,19 @@ export default function Projects() {
           viewport={{ once: true }}
           className="grid gap-8 items-start justify-center "
         >
-          <div className="relative group w-80 ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1 }}
+            className="relative group w-80 "
+          >
             <div
               className="relative rounded-lg  backdrop-blur-sm bg-white/5 border-[#ffffff72] leading-none flex flex-col items-center justify-center 
                 border-[1px]
                 "
             >
               <div className="h-32">
-                <motion.img
-                  initial={{ opacity: 0 }}
-                  viewport={{ once: true }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ type: "spring", stiffness: 120 }}
+                <img
                   className="h-auto w-auto"
                   src={project.Image}
                   alt={project.Name}
@@ -63,7 +64,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       ))}
     </div>

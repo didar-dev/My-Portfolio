@@ -94,14 +94,12 @@ export default function Skills() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ type: "spring", stiffness: 120 }}
     >
       <motion.h1
         className="text-5xl font-semibold bg-gradient-to-r bg-clip-text  text-[#ffffff] "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ type: "spring", stiffness: 120 }}
       >
         Skills
       </motion.h1>
@@ -115,7 +113,6 @@ export default function Skills() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 120 }}
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
               {skills
@@ -141,7 +138,6 @@ export default function Skills() {
                         initial={{ opacity: 0 }}
                         viewport={{ once: true }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 120 }}
                         className="h-10"
                         height="10px"
                         width="auto"
@@ -164,7 +160,6 @@ export default function Skills() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 120 }}
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
               {skills
@@ -190,7 +185,6 @@ export default function Skills() {
                         initial={{ opacity: 0 }}
                         viewport={{ once: true }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 120 }}
                         className="h-10"
                         height="10px"
                         width="auto"
@@ -213,7 +207,6 @@ export default function Skills() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 120 }}
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
               {skills
@@ -239,7 +232,6 @@ export default function Skills() {
                         initial={{ opacity: 0 }}
                         viewport={{ once: true }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 120 }}
                         className="h-10"
                         height="10px"
                         width="auto"
