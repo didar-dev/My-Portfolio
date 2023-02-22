@@ -12,6 +12,7 @@ export default function Home() {
         backgroundImage: `url(../Images/Background.png)`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "auto auto",
+        backgroundColor: "#000000",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
