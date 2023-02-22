@@ -43,7 +43,7 @@ export default function Projects() {
                 <img
                   className="h-auto w-auto"
                   src={project.Image}
-                  alt={project.Name}
+                  alt={project.title}
                 />
               </div>
               <div className="h-40 m-2 md:m-4 flex flex-col items-center justify-center gap-2">
