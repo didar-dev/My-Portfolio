@@ -1,22 +1,6 @@
-import Script from "next/script";
 export default function Head() {
   return (
     <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-3FW29S7XTM`}
-      />
-
-      <Script id="ga-script" strategy="lazyOnload">
-        {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3FW29S7XTM', {
-        page_path: window.location.pathname,
-      });
-          `}
-      </Script>
       <title>Didar Abdulkhaliq</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="manifest" href="/manifest.json" />
