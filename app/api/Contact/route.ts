@@ -1,15 +1,6 @@
-const nodemailer = require("nodemailer");
-
-import { NextApiRequest, NextApiResponse } from "next";
-type Data = {
-  message?: string;
-  status?: string;
-};
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
+import nodemailer from "nodemailer";
+import { NextRequest, NextResponse } from "next/server";
+export async function POST(request: NextRequest) {
   let transporter = nodemailer.createTransport({
     service: "Gmail",
     host: "smtp.gmail.com",
@@ -20,19 +11,11 @@ export default async function handler(
       pass: process.env.EMAILAUTHPASS,
     },
   });
-  if (req.method !== "POST") {
-    return res.status(405).json({
-      message: "Method not allowed",
-    });
-  }
-  const Body = JSON.parse(req.body);
-  const Name = Body.Name;
-  const From = Body.From;
-  const Message = Body.Message;
-  console.log(From);
-  if (Name === "" || From === "" || Message === "") {
-    return res.status(400).json({
-      message: "Bad Request",
+  const { Name, From, Message } = await request.json();
+  if (!Name || !From || !Message) {
+    return NextResponse.json({
+      message: "Please Fill All Fields",
+      status: "error",
     });
   }
   const mailOptions = {
@@ -47,8 +30,8 @@ export default async function handler(
       console.log(error);
     }
   });
-  res.status(200).json({
-    message: "Email Sent Successfully, I will get back to you soon",
+  return NextResponse.json({
+    message: "Email Sent Successfully",
     status: "success",
   });
 }
