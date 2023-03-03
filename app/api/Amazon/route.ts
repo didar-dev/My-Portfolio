@@ -1,7 +1,7 @@
 /// this is a amazon product info grabber
 ///it is for one of my projects but it is here
-
 import { NextRequest, NextResponse } from "next/server";
+
 export async function POST(request: NextRequest) {
   const { Link } = await request.json();
   try {

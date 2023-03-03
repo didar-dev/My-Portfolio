@@ -7,7 +7,6 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // Apply a Content-Security-Policy header to all pages
         source: "/",
         headers: [
           {
@@ -15,7 +14,16 @@ const nextConfig = {
             value:
               "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';",
           },
+          { key: "Access-Control-Allow-Origin", value: "*" },
         ],
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://localhost:8000/api/:path*", // Proxy to Backend
       },
     ];
   },
