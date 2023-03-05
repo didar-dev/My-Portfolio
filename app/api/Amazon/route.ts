@@ -16,6 +16,7 @@ export async function POST(request: NextRequest) {
     return {
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
       },
       body: JSON.stringify(json),
     };
@@ -23,6 +24,7 @@ export async function POST(request: NextRequest) {
     return {
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
       },
       body: JSON.stringify(error),
     };
