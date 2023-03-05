@@ -17,6 +17,11 @@ export async function POST(request: NextRequest) {
       message: "Please Fill All Fields",
       status: "error",
     });
+  } else if (!From.includes("@")) {
+    return NextResponse.json({
+      message: "Please Enter A Valid Email",
+      status: "error",
+    });
   }
   const mailOptions = {
     from: process.env.OPTIONFROM,
@@ -28,11 +33,13 @@ export async function POST(request: NextRequest) {
   transporter.sendMail(mailOptions, (error: any, info: any) => {
     if (error) {
       console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+      return NextResponse.json({
+        message: "Email Sent Successfully",
+        status: "success",
+      });
     }
-  });
-  return NextResponse.json({
-    message: "Email Sent Successfully",
-    status: "success",
   });
 }
 
