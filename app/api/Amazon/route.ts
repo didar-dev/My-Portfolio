@@ -13,8 +13,18 @@ export async function POST(request: NextRequest) {
       }
     );
     const json = await data.json();
-    return NextResponse.json(json);
+    return {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify(json),
+    };
   } catch (error) {
-    return NextResponse.json(error);
+    return {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify(error),
+    };
   }
 }
